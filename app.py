@@ -4,9 +4,13 @@ import uvicorn
 from pydantic import BaseModel
 from typing import List, Union
 from RAGModel.LLMModel import get_completion
+from mangum import Mangum
+
+
 
 
 app = FastAPI()
+handler = Mangum(app)
 
 app.add_middleware(
     CORSMiddleware,
