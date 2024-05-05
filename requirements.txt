@@ -1,0 +1,10 @@
+langchain
+numpy
+OpenAI
+langchain_core
+langchain_openai
+langchain_chroma
+fastapi
+uvicorn
+pypdf
+
